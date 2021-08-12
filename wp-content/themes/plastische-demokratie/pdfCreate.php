@@ -1,13 +1,14 @@
 <?php
 
-include('/home/pd_x495vc/pd.thepeople.world/wp-load.php');
-
-require_once '/home/pd_x495vc/pd.thepeople.world/dompdf/autoload.inc.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/wp-load.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/dompdf/autoload.inc.php';
 
 $model_id = $_GET['id'];
 
+$site_url = site_url();
 
-$logo_url = "http://www.pd.thepeople.world/wp-content/themes/plastische-demokratie/source/img/PD_Logo_5.png";
+
+$logo_url = $site_url."/wp-content/themes/plastische-demokratie/source/img/PD_Logo_5.png";
 
 $heading = get_the_title($model_id);
 
@@ -168,7 +169,7 @@ $slug =  create_slug($heading);
 
 $render_html = <<<EOT
 
-<link rel="stylesheet" href="http://www.pd.thepeople.world/wp-content/themes/plastische-demokratie/pdf.css" type="text/css"/>
+<link rel="stylesheet" href="$site_url/wp-content/themes/plastische-demokratie/pdf.css" type="text/css"/>
 
 <div class="logo">
   <img src="$logo_url" alt="logo">
