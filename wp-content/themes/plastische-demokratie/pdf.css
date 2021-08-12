@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Arial-Narrow-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('http://www.pd.thepeople.world/wp-content/themes/plastische-demokratie/assets/fonts/Arial-Narrow-Bold.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Basteleur-Bold';
+    src: url('http://www.pd.thepeople.world/wp-content/themes/plastische-demokratie/assets/fonts/Basteleur-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.wrapper { max-width: 580px; margin: 0 auto; font-family: 'sans-serif'; }
+
+.logo { display: block; margin: 0; }
+.logo img { width: 140px; margin-bottom: -20px; height: auto; }
+
+h1 { font-family: Arial-Narrow-Bold; font-weight: bold; font-size: 40px; line-height: 50px; margin: 0; text-transform: uppercase; color: #000; text-align: center; display: block; }
+h3 { font-family: Arial-Narrow-Bold; font-weight: bold; font-size: 20px; line-height: 35px; color: #000; text-align: center; display: block; margin: 0 0 25px 0; }
+
+.header-img img { margin-bottom: 30px; min-width: 300px; }
+.image_section img { margin-bottom: 30px; min-width: 300px; }
+
+b.tag { font-family: 'Basteleur-Bold'; font-weight: normal; }
