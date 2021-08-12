@@ -64,6 +64,17 @@ $description = get_field('description__beschreibung', $model_id);
 
 $img_section = '';
 
+	if(get_field('youtube',$model_id) ):
+
+		$youtube = get_field("youtube",$model_id);
+
+		preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $youtube, $match);	
+
+		$img_section .= '<div class="mx-auto  w-11/12 sm:w-3/5 mt-8">
+											Video: '.$match[0][0].'
+									</div><br/><br/>';	
+	endif;
+
 
 	if(get_field('bild_1',$model_id) ):
 
